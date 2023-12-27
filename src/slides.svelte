@@ -8,8 +8,13 @@
 	} from '@components'
 </script>
 
+<style>
+	@import '@styles/highlightjs-copy.css';
+</style>
+
 <Presentation>
 
+	<!-- タイトル -->
 	<Vertical>
 		<Slide>
 			<h1 class="font-bold text-8xl">
@@ -17,6 +22,44 @@
 				リッジ回帰を<br />
 				実装しよう
 			</h1>
+		</Slide>
+		<Slide>
+			<h3 class="font-bold text-6xl">誰？</h3>
+			<div class="mt-12 flex flex-row">
+				<div class="basis-1/3">
+					<img
+					class="w-64 h-64 rounded-full"
+					src="https://rawcdn.githack.com/paithiov909/paithiov909/f5342cd61b45e29c34b17fc11c9bc1766eacb441/avatar.jpg"
+					alt="paithiov909"
+					/>
+				</div>
+				<div class="basis-1/2 mt-4 mx-auto">
+					<ul class="list-disc text-left">
+						<li>
+							<a
+								class="text-green-300"
+								href="https://github.com/paithiov909"
+								target="_blank"
+								rel="noreferrer"
+							>paithiov909</a>
+							というアカウントでインターネットしている</li>
+						<li>
+							Rパッケージをつくったりしている<br />
+							-> <a
+								class="text-green-300"
+								href="https://github.com/paithiov909/gibasa/"
+								target="_blank"
+								rel="noreferrer"
+							>gibasa</a>,
+							<a
+								class="text-green-300"
+								href="https://github.com/paithiov909/audubon"
+								target="_blank"
+								rel="noreferrer"
+							>audubon</a>
+						</li>
+					</ul>
+				</div>
 		</Slide>
 		<Slide>
 			<h3 class="font-bold text-6xl">アジェンダ</h3>
@@ -40,6 +83,7 @@
 		</Slide>
 	</Vertical>
 
+	<!-- モチベーション -->
 	<Vertical>
 		<Slide animate>
 			<h2 class="font-bold text-8xl">モチベーション</h2>
@@ -113,6 +157,7 @@
 		</Slide>
 	</Vertical>
 
+	<!-- 実装のポイント -->
 	<Vertical>
 		<Slide animate>
 			<h2 class="font-bold text-8xl">実装のポイント</h2>
@@ -137,6 +182,7 @@
 		</Slide>
 	</Vertical>
 
+	<!-- ひな形をつくる -->
 	<Vertical>
 		<Slide animate>
 			<h2 class="font-bold text-8xl">ひな形をつくる</h2>
@@ -158,6 +204,7 @@
 		</Slide>
 	</Vertical>
 
+	<!-- テストを書く -->
 	<Vertical>
 		<Slide animate>
 			<h2 class="font-bold text-8xl">テストを書く</h2>
@@ -202,6 +249,7 @@
 		</Slide>
 	</Vertical>
 
+	<!-- 関数を実装する -->
 	<Vertical>
 		<Slide animate>
 			<h2 class="font-bold text-8xl">関数を実装する</h2>
@@ -241,6 +289,7 @@
 			</Slide>
 	</Vertical>
 
+	<!-- テストしてみる -->
 	<Vertical>
 		<Slide animate>
 			<h2 class="font-bold text-8xl">テストしてみる</h2>
@@ -254,6 +303,7 @@
 		</Slide>
 	</Vertical>
 
+	<!-- やってみよう -->
 	<Vertical>
 		<Slide animate>
 			<h2 class="font-bold text-8xl">やってみよう</h2>
@@ -294,7 +344,7 @@
 				</Code>
 			</div>
 		</Slide>
-		<Slide animate>
+		<Slide>
 			<h2 class="font-bold text-8xl">やってみよう</h2>
 			<p class="mt-12 text-4xl">
 				このテストもこのままでは通らない。修正が必要
@@ -323,6 +373,7 @@
 		</Slide>
 	</Vertical>
 
+	<!-- tidymodelsで使う -->
 	<Vertical>
 		<Slide animate>
 			<h2 class="font-bold text-8xl">tidymodelsで使う</h2>
@@ -360,6 +411,7 @@
 		</Slide>
 	</Vertical>
 
+	<!-- エンジンの追加 -->
 	<Vertical>
 		<Slide animate>
 			<h2 class="font-bold text-8xl">エンジンの追加</h2>
@@ -485,6 +537,7 @@
 		</Slide>
 	</Vertical>
 
+	<!-- predictを実装する -->
 	<Vertical>
 		<Slide animate>
 			<h2 class="font-bold text-8xl">predictを実装する</h2>
@@ -554,6 +607,7 @@
 		</Slide>
 	</Vertical>
 
+	<!-- 試してみよう -->
 	<Vertical>
 		<Slide animate>
 			<h2 class="font-bold text-8xl">試してみよう</h2>
@@ -647,6 +701,7 @@
 		</Slide>
 	</Vertical>
 
+	<!-- まとめ -->
 	<Slide animate>
 		<h2 class="font-bold text-8xl">まとめ</h2>
 		<Step>

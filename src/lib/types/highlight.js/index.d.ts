@@ -321,3 +321,9 @@ declare module 'highlight.js/lib/languages/*' {
 	const defineLanguage: LanguageFn
 	export default defineLanguage
 }
+
+// declare module 'highlightjs-copy' {
+// 	import { HLJSPlugin } from 'highlight.js'
+// 	const hljsCopy: HLJSPlugin
+// 	export default hljsCopy
+// }

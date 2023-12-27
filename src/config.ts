@@ -5,6 +5,9 @@ import Notes from 'reveal.js/plugin/notes/notes'
 
 import { registerLanguages } from '@languages'
 
+import CopyButtonPlugin from "./highlightjs-copy"
+import type { HLJSApi } from 'highlight.js'
+
 const options: Reveal.Options = {
 	// presentation size respecting aspect ratio
 	width: 820,
@@ -19,7 +22,10 @@ const options: Reveal.Options = {
 	// syntax highlight options
 	highlight: {
 		// add new languages
-		beforeHighlight: registerLanguages,
+		beforeHighlight: (hljs: HLJSApi) => {
+			hljs.addPlugin(new CopyButtonPlugin())
+			registerLanguages(hljs)
+		},
 		// disable automatic syntax highlighting
 		highlightOnLoad: false,
 	},
