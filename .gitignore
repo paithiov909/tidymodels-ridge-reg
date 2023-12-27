@@ -89,7 +89,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+dist/*
 docs
 
 # Gatsby files
@@ -131,3 +131,5 @@ docs
 .pnp.*
 
 oreoridge/
+.Rproj.user
+.Rhistory

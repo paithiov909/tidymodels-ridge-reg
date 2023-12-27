@@ -33,7 +33,7 @@
 					alt="paithiov909"
 					/>
 				</div>
-				<div class="basis-1/2 mt-4 mx-auto">
+				<div class="basis-2/3 mt-4">
 					<ul class="list-disc text-left">
 						<li>
 							<a
@@ -63,23 +63,24 @@
 		</Slide>
 		<Slide>
 			<h3 class="font-bold text-6xl">アジェンダ</h3>
-			<div class="mt-12 pl-8 flex flex-row">
-			<ul class="basis-1/2 list-disc text-left">
-				<li>モチベーション</li>
-				<li>実装のポイント</li>
-				<li>ひな形をつくる</li>
-				<li>テストを書く</li>
-				<li>関数を実装する</li>
-				<li>テストしてみる</li>
-				<li>やってみよう</li>
-			</ul>
-			<ul class="basis-1/2 list-disc text-left">
-				<li>tidymodelsで使う</li>
-				<li>エンジンの追加</li>
-				<li>predictを実装する</li>
-				<li>試してみよう</li>
-				<li>まとめ</li>
-			</ul>
+			<div class="mt-12 mx-auto flex flex-row">
+				<ul class="basis-1/2">
+					<li>モチベーション</li>
+					<li>実装のポイント</li>
+					<li>ひな形をつくる</li>
+					<li>テストを書く</li>
+					<li>関数を実装する</li>
+					<li>テストしてみる</li>
+					<li>やってみよう</li>
+				</ul>
+				<ul class="basis-1/2">
+					<li>tidymodelsで使う</li>
+					<li>エンジンの追加</li>
+					<li>predictを実装する</li>
+					<li>試してみよう</li>
+					<li>まとめ</li>
+				</ul>
+			</div>
 		</Slide>
 	</Vertical>
 
@@ -163,20 +164,20 @@
 			<h2 class="font-bold text-8xl">実装のポイント</h2>
 		</Slide>
 		<Slide animate>
-			<h2 class="font-bold text-8xl">実装のポイント</h2>
-			<ul class="mt-12 pl-8 list-decimal text-left">
+			<h2 class="font-bold text-6xl">実装のポイント</h2>
+			<ul class="mt-12 pl-24 list-decimal text-left">
 				<Step>
-					<li class="m-4 text-5xl">引数を<span class="text-blue-300">formula</span>,
+					<li class="m-4">引数を<span class="text-blue-300">formula</span>,
 					<span class="text-blue-300">data</span>の形にしたい</li>
 				</Step>
 				<Step>
-					<li class="m-4 text-5xl"><span class="text-blue-300">lambda</span>をtidymodelsで調整可能にしたい</li>
+					<li class="m-4"><span class="text-blue-300">lambda</span>をtidymodelsで調整可能にしたい</li>
 				</Step>
 			</ul>
 			<Step>
-				<ul class="mt-12 pl-8 list-decimal text-left">
-					<li class="m-4 text-5xl"> ->ラッパーを書けばできそう</li>
-					<li class="m-4 text-5xl"> ->それをさらにラップすればいい</li>
+				<ul class="mt-12 pl-24 list-decimal text-left">
+					<li class="m-4"> ->ラッパーを書けばできそう</li>
+					<li class="m-4"> ->それをさらにラップすればいい</li>
 				</ul>
 			</Step>
 		</Slide>
@@ -188,7 +189,7 @@
 			<h2 class="font-bold text-8xl">ひな形をつくる</h2>
 		</Slide>
 		<Slide animate>
-			<h2 class="font-bold text-8xl">ひな形をつくる</h2>
+			<h2 class="font-bold text-6xl">ひな形をつくる</h2>
 			<p class="mt-12 text-4xl">
 				とりあえず、Rパッケージのひな形をつくる
 			</p>
@@ -197,7 +198,6 @@
 					{`
 					usethis::create_tidy_package("oreoridge")
 					setwd("oreoridge")
-					here::i_am() # 作業ディレクトリの確認
 					`}
 				</Code>
 			</div>
@@ -210,7 +210,7 @@
 			<h2 class="font-bold text-8xl">テストを書く</h2>
 		</Slide>
 		<Slide animate>
-			<h2 class="font-bold text-8xl">テストを書く</h2>
+			<h2 class="font-bold text-6xl">テストを書く</h2>
 			<p class="mt-12 text-4xl text-left">
 				はじめに、実装したい関数に対応するテストを書いてみる
 			</p>
@@ -220,8 +220,8 @@
 			</p>
 		</Slide>
 		<Slide animate>
-			<h2 class="font-bold text-8xl">テストを書く</h2>
-			<ul class="mt-12 pl-8 list-disc text-left">
+			<h2 class="font-bold text-6xl">テストを書く</h2>
+			<ul class="mt-12 pl-12 list-disc text-left">
 				<li>以下の内容のテストをつくる</li>
 				<li>DESCRIPTIONのSuggestsにbroom, dplyr, MASSを追加</li>
 				<li>テストを実行してみる</li>
@@ -255,15 +255,15 @@
 			<h2 class="font-bold text-8xl">関数を実装する</h2>
 		</Slide>
 		<Slide animate>
-			<h2 class="font-bold text-8xl">関数を実装する</h2>
-			<ul class="mt-12 pl-8 list-disc text-left">
+			<h2 class="font-bold text-6xl">関数を実装する</h2>
+			<ul class="mt-12 pl-12 list-disc text-left">
 				<li>次の内容をコピペ、roxygenコメントを書く</li>
 				<li>DESCRIPTIONのImportsにstats, tibbleを追加</li>
 				<li><span class="text-blue-300">devtools::document()</span>する</li>
 			</ul>
 		</Slide>
 		<Slide animate>
-			<h2 class="font-bold text-8xl">関数を実装する</h2>
+			<h2 class="font-bold text-6xl">関数を実装する</h2>
 				<div class="mt-12">
 					<Code lang="r">
 						{`
@@ -295,8 +295,8 @@
 			<h2 class="font-bold text-8xl">テストしてみる</h2>
 		</Slide>
 		<Slide animate>
-			<h2 class="font-bold text-8xl">テストしてみる</h2>
-			<ul class="mt-12 pl-8 list-disc text-left">
+			<h2 class="font-bold text-6xl">テストしてみる</h2>
+			<ul class="mt-12 pl-12 list-disc text-left">
 				<li>actualには<span class="text-blue-300">(Intercept)</span>の行があるので通らないはず</li>
 				<li>ここではテストの側を修正する</li>
 			</ul>
@@ -309,19 +309,19 @@
 			<h2 class="font-bold text-8xl">やってみよう</h2>
 		</Slide>
 		<Slide animate>
-			<h2 class="font-bold text-8xl">やってみよう</h2>
-			<p class="mt-12 text-4xl text-left">
+			<h2 class="font-bold text-6xl">やってみよう</h2>
+			<p class="mt-12 text-4xl">
 				<span class="text-blue-300">glmnet::glmnet()</span>のラッパーを追加してみよう
 			</p>
-			<ul class="mt-4 pl-8 list-disc text-left">
+			<ul class="mt-8">
 				<li>テストを書く</li>
 				<li>関数を実装する</li>
 				<li>テストしてみる</li>
 			</ul>
 		</Slide>
 		<Slide animate>
-			<h2 class="font-bold text-8xl">やってみよう</h2>
-			<p class="mt-12 text-4xl text-left">
+			<h2 class="font-bold text-6xl">やってみよう</h2>
+			<p class="mt-12 text-4xl">
 				<span class="text-blue-300">glmnet::glmnet()</span>のラッパーを追加してみよう
 			</p>
 			<div class="mt-4">
@@ -345,7 +345,7 @@
 			</div>
 		</Slide>
 		<Slide>
-			<h2 class="font-bold text-8xl">やってみよう</h2>
+			<h2 class="font-bold text-6xl">やってみよう</h2>
 			<p class="mt-12 text-4xl">
 				このテストもこのままでは通らない。修正が必要
 			</p>
@@ -379,7 +379,7 @@
 			<h2 class="font-bold text-8xl">tidymodelsで使う</h2>
 		</Slide>
 		<Slide animate>
-			<h2 class="font-bold text-8xl">tidymodelsで使う</h2>
+			<h2 class="font-bold text-6xl">tidymodelsで使う</h2>
 			<p class="mt-12 text-4xl text-left">
 				<span class="text-blue-300">oreoridge::lm_ridge()</span>をtidymodelsで使えるようにしたい
 			</p>
@@ -391,8 +391,8 @@
 			</p>
 		</Slide>
 		<Slide>
-			<h2 class="font-bold text-8xl">tidymodelsで使う</h2>
-			<p class="mt-12 text-4xl">
+			<h2 class="font-bold text-6xl">tidymodelsで使う</h2>
+			<p class="my-8 text-4xl">
 				parsnipのモデルは
 				<a
 					class="text-green-300"
@@ -403,11 +403,22 @@
 				の<br />
 				3つの組み合わせで構成されている
 			</p>
-			<ul class="mt-4 pl-8 list-disc text-left">
-				<li>タイプ -><span class="text-blue-300">parsnip::linear_reg()</span>など</li>
-				<li>モード ->classification, regressionなど</li>
-				<li>エンジン ->lm, glmnetなど</li>
-			</ul>
+			<table>
+				<tbody>
+					<tr>
+						<td>タイプ</td>
+						<td><span class="text-blue-300">parsnip::linear_reg()</span>など</td>
+					</tr>
+					<tr>
+						<td>モード</td>
+						<td>classification, regressionなど</td>
+					</tr>
+					<tr>
+						<td>エンジン</td>
+						<td>lm, glmnetなど</td>
+					</tr>
+				</tbody>
+			</table>
 		</Slide>
 	</Vertical>
 
@@ -417,7 +428,7 @@
 			<h2 class="font-bold text-8xl">エンジンの追加</h2>
 		</Slide>
 		<Slide animate>
-			<h2 class="font-bold text-8xl">エンジンの追加</h2>
+			<h2 class="font-bold text-6xl">エンジンの追加</h2>
 			<p class="mt-12 text-4xl">
 				<span class="text-blue-300">add_linear_reg_oreoridge</span>関数を定義して、<br />
 				そのなかに
@@ -443,7 +454,7 @@
 			</div>
 		</Slide>
 		<Slide>
-			<h2 class="font-bold text-8xl">エンジンの追加</h2>
+			<h2 class="font-bold text-6xl">エンジンの追加</h2>
 			<div class="mt-12">
 				<Code lang="r">
 					{`
@@ -463,7 +474,7 @@
 			</div>
 		</Slide>
 		<Slide>
-			<h2 class="font-bold text-8xl">エンジンの追加</h2>
+			<h2 class="font-bold text-6xl">エンジンの追加</h2>
 			<div class="mt-12">
 				<Code lang="r">
 					{`
@@ -480,7 +491,7 @@
 			</div>
 		</Slide>
 		<Slide>
-			<h2 class="font-bold text-8xl">エンジンの追加</h2>
+			<h2 class="font-bold text-6xl">エンジンの追加</h2>
 			<div class="mt-12">
 				<Code lang="r">
 					{`
@@ -500,7 +511,7 @@
 			</div>
 		</Slide>
 		<Slide>
-			<h2 class="font-bold text-8xl">エンジンの追加</h2>
+			<h2 class="font-bold text-6xl">エンジンの追加</h2>
 			<div class="mt-12">
 				<Code lang="r">
 					{`
@@ -525,8 +536,8 @@
 			</div>
 		</Slide>
 		<Slide>
-			<h2 class="font-bold text-8xl">エンジンの追加</h2>
-			<ul class="mt-12 pl-8 list-disc text-left">
+			<h2 class="font-bold text-6xl">エンジンの追加</h2>
+			<ul class="mt-12 pl-12 list-disc text-left">
 				<li>
 					<span class="text-blue-300">.onLoad()</span>のなかに先ほどの関数の呼び出しを追加
 				</li>
@@ -543,8 +554,8 @@
 			<h2 class="font-bold text-8xl">predictを実装する</h2>
 		</Slide>
 		<Slide animate>
-			<h2 class="font-bold text-8xl">predictを実装する</h2>
-			<ul class="mt-12 pl-8 list-disc text-left">
+			<h2 class="font-bold text-6xl">predictを実装する</h2>
+			<ul class="mt-12 pl-12 list-disc text-left">
 				<li>
 					先ほどの関数は、<span class="text-blue-300">lm_ridge()</span>の戻り値を使って後から<span class="text-blue-300">predict()</span>できるような記述をした
 				</li>
@@ -557,7 +568,7 @@
 			</ul>
 		</Slide>
 		<Slide animate>
-			<h2 class="font-bold text-8xl">predictを実装する</h2>
+			<h2 class="font-bold text-6xl">predictを実装する</h2>
 			<p class="mt-12 text-4xl">
 				まず
 				<span class="text-blue-300">lm_ridge()</span>を次のように修正
@@ -579,7 +590,7 @@
 			</div>
 		</Slide>
 		<Slide>
-			<h2 class="font-bold text-8xl">predictを実装する</h2>
+			<h2 class="font-bold text-6xl">predictを実装する</h2>
 			<p class="mt-12 text-4xl">
 				次に<span class="text-blue-300">predict.oreoridge()</span>を次のように書き、<br />
 				<span class="text-blue-300">devtools::document()</span>する
@@ -613,7 +624,7 @@
 			<h2 class="font-bold text-8xl">試してみよう</h2>
 		</Slide>
 		<Slide animate>
-			<h2 class="font-bold text-8xl">試してみよう</h2>
+			<h2 class="font-bold text-6xl">試してみよう</h2>
 			<p class="mt-12 text-4xl">
 				<span class="text-blue-300">parsnip::linear_reg()</span>から
 				<span class="text-blue-300">lm_ridge()</span>を使ってみる
@@ -637,7 +648,7 @@
 			</Step>
 		</Slide>
 		<Slide>
-			<h2 class="font-bold text-8xl">試してみよう</h2>
+			<h2 class="font-bold text-6xl">試してみよう</h2>
 			<div class="mt-12">
 				<Code lang="r">
 					{`
@@ -661,7 +672,7 @@
 			</div>
 		</Slide>
 		<Slide>
-			<h2 class="font-bold text-8xl">試してみよう</h2>
+			<h2 class="font-bold text-6xl">試してみよう</h2>
 			<div class="mt-12">
 				<Code lang="r">
 					{`
@@ -683,7 +694,7 @@
 			</div>
 		</Slide>
 		<Slide>
-			<h2 class="font-bold text-8xl">試してみよう</h2>
+			<h2 class="font-bold text-6xl">試してみよう</h2>
 			<div class="mt-12">
 				<Code lang="r">
 					{`
@@ -703,7 +714,7 @@
 
 	<!-- まとめ -->
 	<Slide animate>
-		<h2 class="font-bold text-8xl">まとめ</h2>
+		<h2 class="font-bold text-6xl">まとめ</h2>
 		<Step>
 			<p class="mt-12 text-4xl text-left">
 				tidymodelsでリッジ回帰するためのRパッケージを書き、とりあえず動くところまで実装できた

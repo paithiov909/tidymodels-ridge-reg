@@ -10,13 +10,17 @@ import type { HLJSApi } from 'highlight.js'
 
 const options: Reveal.Options = {
 	// presentation size respecting aspect ratio
-	width: 820,
-	height: 1180,
+	width: 1000,
+	height: 900,
 	// content padding
 	margin: 0.04,
 	// smallest and largest possible scale
 	minScale: 0.2,
 	maxScale: 2.0,
+	// use local katex instead of CDN when developing
+	katex: {
+		local: './katex',
+	},
 	// plugins
 	plugins: [Markdown, Highlight, Math.KaTeX, Notes],
 	// syntax highlight options
