@@ -28,9 +28,9 @@
 			<div class="mt-12 flex flex-row">
 				<div class="basis-1/3">
 					<img
-					class="w-64 h-64 rounded-full"
-					src="https://rawcdn.githack.com/paithiov909/paithiov909/f5342cd61b45e29c34b17fc11c9bc1766eacb441/avatar.jpg"
-					alt="paithiov909"
+						class="w-64 h-64 rounded-full"
+						src="https://rawcdn.githack.com/paithiov909/paithiov909/f5342cd61b45e29c34b17fc11c9bc1766eacb441/avatar.jpg"
+						alt="paithiov909"
 					/>
 				</div>
 				<div class="basis-2/3 mt-4">
@@ -56,7 +56,13 @@
 								href="https://github.com/paithiov909/audubon"
 								target="_blank"
 								rel="noreferrer"
-							>audubon</a>
+							>audubon</a>,
+							<a
+								class="text-green-300"
+								href="https://github.com/paithiov909/baritsu"
+								target="_blank"
+								rel="noreferrer"
+							>baritsu</a>
 						</li>
 					</ul>
 				</div>
